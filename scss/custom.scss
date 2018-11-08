@@ -1,0 +1,137 @@
+
+@import "variables";
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(../images/bg-ts.png) no-repeat 0 0 ;
+    background-color: #fff;
+    background-size: cover;
+    font-family: $font_base;
+    color: $ts_grigio_base;
+    @media screen and (max-width: 600px) {
+        background: none;
+        text-align: center; 
+    }
+}
+
+a {
+    color: $ts_blu_scuro;
+    text-decoration: none;
+    &:hover {
+        color: $ts_blu_chiaro;
+        text-decoration: none;
+    }
+}
+
+.logo {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background: url(../images/logo.svg) no-repeat;
+    background-color: transparent;
+    background-size: contain;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    @media screen and (max-width: 1024px) {
+        width: 50%;
+    }
+    @media screen and (min-width: 600px) and (max-width: 800px) {
+        left: 30%;
+    }
+    @media screen and (max-width: 600px) {
+        width: 80%;
+        left: 10%
+    }
+}
+
+.coming-soon {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    margin-left: 100px;
+    @media screen and (max-width: 1024px) {
+        left: 15%;
+        margin-left: 30px;
+    }
+    @media screen and (max-width: 600px) {
+        left: 0%;
+        margin: 0;
+        width: 100%;
+    }
+    .cs {
+        font-size: 2.2em;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $ts_blu_scuro;
+        letter-spacing: .2em;
+        @media screen and (max-width: 800px) {
+            font-size: 1.8em;
+        }
+    }
+    .service-title {
+        font-weight: 400;
+        
+    }
+    .settore {
+        @extend .service-title;
+        display: inline;
+        padding-right: 1em;
+        text-transform: uppercase;
+        
+
+        &.spazio {
+            color: $ts_spazio;
+        }
+        &.ambiente {
+            color: $ts_ambiente;
+        }
+        &.geofisica {
+            color: $ts_geofisica;
+        }
+        &.farmaceutica {
+            color: $ts_farmaceutica;
+        }
+        &.archeologia {
+            color: $ts_archeologia;
+        }
+    }
+
+}
+
+.footer {
+    font-size: .8em;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1024px) {
+        margin-left: 0px;
+    }
+    @media screen and (max-width: 600px) {
+        left: 0;
+    }
+     @media screen and (max-height: 800px) {
+        top: 80%;
+    }
+    
+    .block {
+        margin: 20px;
+        margin-bottom: 0;
+        flex: 0 1 auto;
+        @media screen and (max-width: 600px) {
+            margin: 20px;
+            width: 100%;
+        }
+    }
+    .company-info {
+        margin: 20px;
+    }
+}

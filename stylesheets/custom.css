@@ -1,0 +1,178 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url(../images/bg-ts.png) no-repeat 0 0;
+  background-color: #fff;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  color: #706f6f;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    background: none;
+    text-align: center;
+  }
+}
+
+a {
+  color: #0872a2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #24bbe0;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: url(../images/logo.svg) no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .logo {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+.coming-soon {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  .coming-soon {
+    left: 15%;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .coming-soon {
+    left: 0%;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.coming-soon .cs {
+  font-size: 2.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #0872a2;
+  letter-spacing: .2em;
+}
+
+@media screen and (max-width: 800px) {
+  .coming-soon .cs {
+    font-size: 1.8em;
+  }
+}
+
+.coming-soon .service-title, .coming-soon .settore {
+  font-weight: 400;
+}
+
+.coming-soon .settore {
+  display: inline;
+  padding-right: 1em;
+  text-transform: uppercase;
+}
+
+.coming-soon .settore.spazio {
+  color: #00a4a0;
+}
+
+.coming-soon .settore.ambiente {
+  color: #db9b00;
+}
+
+.coming-soon .settore.geofisica {
+  color: #b9b965;
+}
+
+.coming-soon .settore.farmaceutica {
+  color: #858794;
+}
+
+.coming-soon .settore.archeologia {
+  color: #b44e3f;
+}
+
+.footer {
+  font-size: .8em;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  margin-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    left: 0;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .footer {
+    top: 80%;
+  }
+}
+
+.footer .block {
+  margin: 20px;
+  margin-bottom: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .footer .block {
+    margin: 20px;
+    width: 100%;
+  }
+}
+
+.footer .company-info {
+  margin: 20px;
+}
+/*# sourceMappingURL=custom.css.map */
